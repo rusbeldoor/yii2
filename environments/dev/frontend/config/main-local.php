@@ -21,11 +21,11 @@ if (!YII_ENV_TEST) {
         'class' => 'yii\gii\Module',
         'generators' => [
             'crud' => [
-                'class' => 'rusbeldoor\yii2-general\common\gii\crud\Generator',
+                'class' => 'rusbeldoor\yii2General\common\gii\crud\Generator',
                 'templates' => ['default' => '@vendor/quick-service/yii2/common/gii/crud/default'],
             ],
             'model' => [
-                'class' => 'rusbeldoor\yii2-general\common\gii\model\Generator',
+                'class' => 'rusbeldoor\yii2General\common\gii\model\Generator',
                 'templates' => ['default' => '@vendor/quick-service/yii2/common/gii/model/default'],
             ],
         ],
