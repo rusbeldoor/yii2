@@ -4,7 +4,7 @@ namespace common\assets\fontawesome;
 
 /**
  * Class AssetBundle
- * @package QuickService\fonts\fontawesome\yii2
+ * @package common\assets\fontawesome
  */
 class AssetBundle extends \yii\web\AssetBundle
 {

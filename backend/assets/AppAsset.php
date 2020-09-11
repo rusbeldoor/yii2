@@ -19,8 +19,7 @@ class AppAsset extends AssetBundle
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap4\BootstrapAsset',
-        'common\assets\fontawesome\AssetBundle',
-        'rusbeldoor\yii2General\common\assets\AssetBundle',
+        'common\assets\AssetBundle',
         'rusbeldoor\yii2General\backend\assets\AssetBundle',
     ];
 }
