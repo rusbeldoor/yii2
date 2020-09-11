@@ -42,6 +42,7 @@
     },
     "repositories": [
         {"type": "composer", "url": "https://asset-packagist.org"},
+        {"type": "git", "url": "git@github.com:rusbeldoor/yii2-general.git"},
         {"type": "git", "url": "git@gitlab.czi-grif.ru:quick-service/fonts.git"},
         {"type": "git", "url": "git@gitlab.czi-grif.ru:quick-service/bootstrap.git"}
     ]
