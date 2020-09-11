@@ -21,7 +21,5 @@ class AppAsset extends AssetBundle
         'yii\bootstrap4\BootstrapAsset',
         'rusbeldoor\yii2General\common\assets\AssetBundle',
         'rusbeldoor\yii2General\backend\assets\AssetBundle',
-        'QuickService\fonts\quickserviceicons\yii2\AssetBundle',
-        'QuickService\fonts\fontawesome\yii2\AssetBundle',
     ];
 }
