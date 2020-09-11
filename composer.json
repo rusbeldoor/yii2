@@ -18,7 +18,7 @@
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap4": "~2.0.6",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-        "rusbeldoor/yii2-general": "dev-master",
+        "rusbeldoor/yii2General": "dev-master",
         "quick-service/fonts": "dev-master",
         "quick-service/bootstrap": "dev-master"
     },
@@ -40,6 +40,7 @@
     },
     "repositories": [
         {"type": "composer", "url": "https://asset-packagist.org"},
+        {"type": "git", "url": "git@github.com:rusbeldoor/yii2-resources.git"},
         {"type": "git", "url": "git@gitlab.czi-grif.ru:quick-service/fonts.git"},
         {"type": "git", "url": "git@gitlab.czi-grif.ru:quick-service/bootstrap.git"}
     ]
