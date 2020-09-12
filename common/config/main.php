@@ -12,5 +12,6 @@ return [
 		'dbMain' => $dbMain,
         'mailer' => ['class' => 'yii\swiftmailer\Mailer'],
         'cache' => ['class' => 'yii\caching\FileCache'],
+        'formatter' => ['class' => 'rusbeldoor\yii2General\common\components\Formatter'],
     ],
 ];
