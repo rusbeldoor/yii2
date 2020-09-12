@@ -1,12 +1,13 @@
 <?php
+
 namespace frontend\controllers;
 
 use Yii;
 use yii\base\InvalidArgumentException;
 use yii\web\BadRequestHttpException;
-use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+
 use common\models\LoginForm;
 use common\models\PasswordResetRequestForm;
 use common\models\ResetPasswordForm;
@@ -17,7 +18,7 @@ use common\models\VerifyEmailForm;
 /**
  * Site controller
  */
-class SiteController extends Controller
+class SiteController extends \rusbeldoor\yii2General\frontend\components\Controller
 {
     /**
      * {@inheritdoc}
