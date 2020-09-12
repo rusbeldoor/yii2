@@ -21,12 +21,12 @@ if (!YII_ENV_TEST) {
         'class' => 'yii\gii\Module',
         'generators' => [
             'crud' => [
-                'class' => 'rusbeldoor\yii2General\common\gii\crud\Generator',
-                'templates' => ['default' => '@vendor/rusbeldoor/yii2-general/common/gii/crud/default'],
+                'class' => 'rusbeldoor\yii2General\gii\crud\Generator',
+                'templates' => ['default' => '@vendor/rusbeldoor/yii2-general/gii/crud/default'],
             ],
             'model' => [
-                'class' => 'rusbeldoor\yii2General\common\gii\model\Generator',
-                'templates' => ['default' => '@vendor/rusbeldoor/yii2-general/common/gii/model/default'],
+                'class' => 'rusbeldoor\yii2General\gii\model\Generator',
+                'templates' => ['default' => '@vendor/rusbeldoor/yii2-general/gii/model/default'],
             ],
         ],
     ];
