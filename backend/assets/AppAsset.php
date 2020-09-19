@@ -20,6 +20,5 @@ class AppAsset extends AssetBundle
         'yii\web\YiiAsset',
         'yii\bootstrap4\BootstrapAsset',
         'common\assets\AssetBundle',
-        'rusbeldoor\yii2General\backend\assets\AssetBundle',
     ];
 }
