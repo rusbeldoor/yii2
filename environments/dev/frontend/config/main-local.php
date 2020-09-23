@@ -28,6 +28,10 @@ if (!YII_ENV_TEST) {
                 'class' => 'rusbeldoor\yii2General\gii\model\Generator',
                 'templates' => ['default' => '@vendor/rusbeldoor/yii2-general/gii/model/default'],
             ],
+            'module' => [
+                'class' => 'rusbeldoor\yii2General\gii\module\Generator',
+                'templates' => ['default' => '@vendor/rusbeldoor/yii2-general/gii/module/default'],
+            ],
         ],
     ];
 }
