@@ -21,7 +21,7 @@ class Menu extends \rusbeldoor\yii2General\components\Menu
                 ['label' => 'Главная', 'url' => ['/site']],
                 ['label' => '|', 'url' => false],
             ],
-            parent::menu()
+            parent::get()
         );
     }
 }
