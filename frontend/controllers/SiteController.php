@@ -18,7 +18,7 @@ use common\models\VerifyEmailForm;
 /**
  * Site controller
  */
-class SiteController extends \rusbeldoor\yii2General\frontend\components\Controller
+class SiteController extends \rusbeldoor\yii2General\components\WebController
 {
     /**
      * {@inheritdoc}
