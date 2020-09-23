@@ -5,6 +5,6 @@ namespace frontend\components;
 /**
  * Контроллер
  */
-class Controller extends \rusbeldoor\yii2General\frontend\components\Controller
+class Controller extends \rusbeldoor\yii2General\components\WebController
 {
 }
