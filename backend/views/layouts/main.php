@@ -27,20 +27,15 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?php
+    <?
     NavBar::begin([
         'brandLabel' => Yii::$app->params['projectName'],
         'brandUrl' => Yii::$app->homeUrl,
         'options' => ['class' => ['navbar-dark', 'bg-dark', 'navbar-expand-md']],
     ]);
-    if (method_exists(Yii::$app->controller->module, 'menu')) {
-        $menuItems = Yii::$app->controller->module->menu();
-    } else {
-        $menuItems = [];
-    }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
+        'items' => Yii::$app->menu->get(),
     ]);
     NavBar::end();
     ?>

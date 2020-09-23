@@ -17,9 +17,7 @@ return [
         'admin' => ['class' => 'backend\modules\admin\Module'],
     ],
     'components' => [
-        'request' => [
-            'csrfParam' => '_csrf-backend',
-        ],
+        'request' => ['csrfParam' => '_csrf-backend'],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
@@ -38,9 +36,7 @@ return [
                 ],
             ],
         ],
-        'errorHandler' => [
-            'errorAction' => 'site/error',
-        ],
+        'errorHandler' => ['errorAction' => 'site/error'],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
