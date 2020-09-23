@@ -33,14 +33,10 @@ AppAsset::register($this);
         'brandUrl' => Yii::$app->homeUrl,
         'options' => ['class' => ['navbar-dark', 'bg-dark', 'navbar-expand-md']],
     ]);
-    $menuItems = [
-        ['label' => 'Главная', 'url' => ['/site/index']],
-        ['label' => '|', 'url' => false],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Вход', 'url' => ['/site/login']];
+    if (method_exists(Yii::$app->controller->module, 'menu')) {
+        $menuItems = Yii::$app->controller->module->menu();
     } else {
-        $menuItems[] = Html::beginForm(['/site/logout'], 'post') . Html::submitButton('Выход (' . Yii::$app->user->identity->username . ')', ['class' => 'btn nav-link']) . Html::endForm();
+        $menuItems = [];
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
