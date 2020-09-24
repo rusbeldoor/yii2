@@ -11,7 +11,7 @@ use common\models\LoginForm;
 /**
  * Site controller
  */
-class SiteController extends \rusbeldoor\yii2General\backend\components\Controller
+class SiteController extends \backend\components\Controller
 {
     /**
      * {@inheritdoc}

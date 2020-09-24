@@ -23,7 +23,7 @@ use yii\web\IdentityInterface;
  * @property integer $updated_at
  * @property string $password write-only password
  */
-class User extends \rusbeldoor\yii2General\common\models\ActiveRecord implements IdentityInterface
+class User extends \rusbeldoor\yii2General\models\ActiveRecord implements IdentityInterface
 {
     const STATUS_DELETED = 0;
     const STATUS_INACTIVE = 9;

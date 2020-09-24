@@ -9,10 +9,16 @@ namespace common\assets;
 class AssetBundle extends \yii\web\AssetBundle
 {
     public $sourcePath = '@common/web';
-    public $css = [];
-    public $js = [];
+
+    public $css = [
+        'css/rusbeldoor-yii2-common.css',
+    ];
+
+    public $js = [
+        'js/rusbeldoor-yii2-common.js',
+    ];
+
     public $depends = [
-        'common\assets\fontawesome\AssetBundle',
         'rusbeldoor\yii2General\common\assets\AssetBundle',
     ];
 }

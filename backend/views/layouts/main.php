@@ -27,24 +27,15 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?php
+    <?
     NavBar::begin([
         'brandLabel' => Yii::$app->params['projectName'],
         'brandUrl' => Yii::$app->homeUrl,
         'options' => ['class' => ['navbar-dark', 'bg-dark', 'navbar-expand-md']],
     ]);
-    $menuItems = [
-        ['label' => 'Главная', 'url' => ['/site/index']],
-        ['label' => '|', 'url' => false],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Вход', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = Html::beginForm(['/site/logout'], 'post') . Html::submitButton('Выход (' . Yii::$app->user->identity->username . ')', ['class' => 'btn nav-link']) . Html::endForm();
-    }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
+        'items' => Yii::$app->menu->get(),
     ]);
     NavBar::end();
     ?>
