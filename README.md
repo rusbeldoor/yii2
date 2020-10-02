@@ -29,3 +29,7 @@ cp -r console/config/mylocal-sample/* console/config
 ```
 php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-general/console/migrations/
 ```
+
+6. ...
+```
+```
