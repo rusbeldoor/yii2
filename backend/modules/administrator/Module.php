@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\modules\admin;
+namespace backend\modules\administrator;
 
 /**
  * admin module definition class
@@ -10,7 +10,7 @@ class Module extends \backend\components\Module
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'backend\modules\admin\controllers';
+    public $controllerNamespace = 'backend\modules\administrator\controllers';
 
     /**
      * {@inheritdoc}

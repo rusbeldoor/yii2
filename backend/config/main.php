@@ -14,7 +14,12 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
-        'admin' => ['class' => 'backend\modules\admin\Module'],
+        'administrator' => [
+            'class' => 'backend\modules\administrator\Module',
+            'modules' => [
+                'rbac' => ['class' => 'rusbeldoor\yii2General\backend\modules\administrator\modules\rbac\Module'],
+            ],
+        ],
     ],
     'components' => [
         'request' => ['csrfParam' => '_csrf-backend'],
