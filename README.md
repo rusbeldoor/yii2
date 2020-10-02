@@ -26,7 +26,7 @@ cp -r console/config/mylocal-sample/* console/config
 ```
 
 5. Выполнить миграции для изменения структуры базы данных.
-Внимание! RBAC структура отличается от стандартной, поэтому если таблицы auth_assignment, auth_item, auth_item_child, auth_rule уже существуют, они будут удалены и созданы заного.
+<span style="color: red; font-weight: bold;">Внимание! RBAC структура отличается от стандартной, поэтому если таблицы auth_assignment, auth_item, auth_item_child, auth_rule уже существуют, они будут удалены и созданы заного.</span>
 ```
 php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-general/console/migrations/
 ```
