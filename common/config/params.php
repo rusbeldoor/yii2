@@ -6,12 +6,12 @@ return [
 
     'user.passwordResetTokenExpire' => 3600,
 
-    // Параметры rusbeldoor
-    'rusbeldoor' => [
-        // Параметры yii2General
-        'yii2General' => [
-            'rbac' => [
-                'onlyMigrations' => true,
+    'rusbeldoor' => [ // Поставщик rusbeldoor
+        'yii2General' => [ // Репозиторий yii2General
+            'rbac' => [ // Модуль RBAC
+                'onlyMigrations' => true, // Изменения только через миграции
+            ],
+            'cron' => [ // Модуль Cron
             ],
         ],
     ],
