@@ -34,6 +34,8 @@ php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-general/console/migratio
 ```
 ```
 
+9. Не обязательно (если Вам нужно и Вы понимаете как делать по другому). Переименуйте папку yii2 в yii2.local. Установите при обращении к адресу http://yii2.local папку yii2.local/frontend/web. Установите при обращении к адресу http://panel.yii2.local папку yii2.local/backend/web.
+
 # Возможности
 
 ## Backend модуль RBAC
