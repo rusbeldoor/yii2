@@ -38,9 +38,9 @@ php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-general/console/migratio
 
 ## Backend модуль RBAC
 
-http://panel.yii2.local/administrator/rbac/role
-http://panel.yii2.local/administrator/rbac/permission
+http://panel.yii2.local/administrator/rbac/role  
+http://panel.yii2.local/administrator/rbac/permission  
 
 ## Backend модуль кроны
 
-http://panel.yii2.local/administrator/cron
+http://panel.yii2.local/administrator/cron  
