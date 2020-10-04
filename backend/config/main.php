@@ -18,6 +18,7 @@ return [
             'class' => 'backend\modules\administrator\Module',
             'modules' => [
                 'rbac' => ['class' => 'rusbeldoor\yii2General\backend\modules\administrator\modules\rbac\Module'],
+                'cron' => ['class' => 'rusbeldoor\yii2General\backend\modules\administrator\modules\cron\Module'],
             ],
         ],
     ],
