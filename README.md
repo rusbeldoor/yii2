@@ -38,4 +38,4 @@ php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-general/console/migratio
 
 # Ещё
 
-Смотри описание репозитория rusbeldoor/yii2-general https://github.com/rusbeldoor/yii2-general/blob/master/README.md
+Смотри описание репозитория https://github.com/rusbeldoor/yii2.
