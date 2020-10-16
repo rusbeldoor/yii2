@@ -13,6 +13,9 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'modules' => [
+        'subscriptions' => ['class' => 'rusbeldoor\yii2General\frontend\modules\subscriptions\Module'],
+    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',

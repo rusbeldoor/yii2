@@ -12,6 +12,7 @@ return [
                 'onlyMigrations' => true, // Изменения только через миграции
             ],
             'cron' => [ // Модуль Cron
+                'onlyMigrations' => true, // Изменения только через миграции
             ],
         ],
     ],
