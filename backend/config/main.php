@@ -17,8 +17,8 @@ return [
         'administrator' => [
             'class' => 'backend\modules\administrator\Module',
             'modules' => [
-                'rbac' => ['class' => 'rusbeldoor\yii2General\backend\modules\rbac\Module'],
-                'cron' => ['class' => 'rusbeldoor\yii2General\backend\modules\cron\Module'],
+                'rbac' => ['class' => 'rusbeldoor\yii2General\modules\rbac\Module'],
+                'cron' => ['class' => 'rusbeldoor\yii2General\modules\cron\Module'],
             ],
         ],
     ],

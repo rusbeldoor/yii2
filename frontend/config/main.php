@@ -14,7 +14,7 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'modules' => [
-        'subscriptions' => ['class' => 'rusbeldoor\yii2General\frontend\modules\subscriptions\Module'],
+        'subscriptions' => ['class' => 'rusbeldoor\yii2General\modules\subscriptions\Module'],
     ],
     'components' => [
         'request' => [
