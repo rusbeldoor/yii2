@@ -11,7 +11,8 @@ class Menu extends \rusbeldoor\yii2General\components\Menu
     {
         if (in_array('administrator', $this->parentModulesIds)) {
             $menu[] = ['label' => 'Главная', 'url' => ['/site']];
-            $this->addAuthorisation(['register' => false]);
         }
+
+        $this->addAuthorisation(['register' => false]);
     }
 }

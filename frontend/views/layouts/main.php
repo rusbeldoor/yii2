@@ -7,8 +7,9 @@ use yii\helpers\Html;
 use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
 use yii\bootstrap4\Breadcrumbs;
-use frontend\assets\AppAsset;
 use common\widgets\Alert;
+use frontend\assets\AppAsset;
+use frontend\components\Menu;
 
 AppAsset::register($this);
 ?>
@@ -28,24 +29,15 @@ AppAsset::register($this);
 
 <div class="wrap">
     <?php
+    $menu = new Menu();
     NavBar::begin([
         'brandLabel' => Yii::$app->params['projectName'],
         'brandUrl' => Yii::$app->homeUrl,
         'options' => ['class' => ['navbar-dark', 'bg-dark', 'navbar-expand-md']],
     ]);
-    $menuItems = [
-        ['label' => 'Главная', 'url' => ['/site/index']],
-        ['label' => '|', 'url' => false],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Регистрация', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Вход', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = Html::beginForm(['/site/logout'], 'post') . Html::submitButton('Выход (' . Yii::$app->user->identity->username . ')', ['class' => 'btn nav-link']) . Html::endForm();
-    }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
-        'items' => $menuItems,
+        'items' => $menu->menu,
     ]);
     NavBar::end();
     ?>
