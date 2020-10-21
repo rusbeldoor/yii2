@@ -29,6 +29,7 @@ AppAsset::register($this);
 
 <div class="wrap">
     <?
+    $menu = new Menu();
     NavBar::begin([
         'brandLabel' => Yii::$app->params['projectName'],
         'brandUrl' => Yii::$app->homeUrl,
@@ -36,7 +37,7 @@ AppAsset::register($this);
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => Menu::get(),
+        'items' => $menu->menu,
     ]);
     NavBar::end();
     ?>
