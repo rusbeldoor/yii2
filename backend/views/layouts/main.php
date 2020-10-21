@@ -3,12 +3,13 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use backend\assets\AppAsset;
 use yii\helpers\Html;
 use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
 use yii\bootstrap4\Breadcrumbs;
 use common\widgets\Alert;
+use backend\assets\AppAsset;
+use backend\components\Menu;
 
 AppAsset::register($this);
 ?>
@@ -35,7 +36,7 @@ AppAsset::register($this);
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => Yii::$app->menu->get(),
+        'items' => Menu::get(),
     ]);
     NavBar::end();
     ?>

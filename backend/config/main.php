@@ -49,7 +49,6 @@ return [
             'rules' => [
             ],
         ],
-        'menu' => ['class' => 'backend\components\Menu'],
     ],
     'params' => $params,
 ];
