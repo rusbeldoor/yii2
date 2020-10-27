@@ -17,7 +17,12 @@ cd yii2
 rm -fR .git
 ```
 
-4. Скопируйте конифгурационные common, backend, frontend, и console файлы из папок "mylocal-sample" в дериктории где эти папки находятся. Настройте скопированные конфигурационные файлы (как минимум укажите правльные доступык к базе данных).
+4. Инициализируйте проект в одном из режимов (0 - development, 1 - production).
+```
+php init
+```
+
+5. Скопируйте конифгурационные common, backend, frontend, и console файлы из папок "mylocal-sample" в дериктории где эти папки находятся. Настройте скопированные конфигурационные файлы (как минимум укажите правльные доступык к базе данных).
 ```
 cp -r common/config/mylocal-sample/* common/config
 cp -r backend/config/mylocal-sample/* backend/config
@@ -25,12 +30,12 @@ cp -r frontend/config/mylocal-sample/* frontend/config
 cp -r console/config/mylocal-sample/* console/config
 ```
 
-5. Выполнить миграции для изменения структуры базы данных. Внимание! Если таблицы auth_assignment, auth_item, auth_item_child, auth_rule или cron уже существуют, они будут удалены и созданы заного.
+6. Выполнить миграции для изменения структуры базы данных. Внимание! Если таблицы auth_assignment, auth_item, auth_item_child, auth_rule или cron уже существуют, они будут удалены и созданы заного.
 ```
 php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-general/console/migrations/
 ```
 
-6. ...
+7. ...
 ```
 ```
 
