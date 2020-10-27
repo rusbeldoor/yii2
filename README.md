@@ -30,12 +30,18 @@ cp -r frontend/config/mylocal-sample/* frontend/config
 cp -r console/config/mylocal-sample/* console/config
 ```
 
-6. Выполнить миграции для изменения структуры базы данных. Внимание! Если таблицы auth_assignment, auth_item, auth_item_child, auth_rule, cron, cron_log, user_subscription, user_subscription_key, user_subscription_channel уже существуют, они будут удалены и созданы заного.
+6. Выполните установку или обновление зависимостей.
+```
+composer install
+composer update
+```
+
+7. Выполнить миграции для изменения структуры базы данных. Внимание! Если таблицы auth_assignment, auth_item, auth_item_child, auth_rule, cron, cron_log, user_subscription, user_subscription_key, user_subscription_channel уже существуют, они будут удалены и созданы заного.
 ```
 php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-general/console/migrations/
 ```
 
-7. ...
+8. ...
 ```
 ```
 
