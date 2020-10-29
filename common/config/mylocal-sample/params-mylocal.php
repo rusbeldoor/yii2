@@ -10,6 +10,10 @@ return [
             'subscriptions' => [ // Модуль Subscriptions
                 'salt' => '12345678', // Соль для хэша
             ],
+            'reCaptcha' => [ // Google ReCaptcha v3
+                'siteKey' => '6LcV5NwZAAAAAFUTeVmZd6WHVszbmqZ7iWm-TMvS',
+                'secretKey' => '6LcV5NwZAAAAALXpvTgqWEs1g-6unMvx63-r6k6V',
+            ],
         ],
     ],
 ];
