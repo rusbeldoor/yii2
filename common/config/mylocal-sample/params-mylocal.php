@@ -11,8 +11,8 @@ return [
                 'salt' => '12345678', // Соль для хэша
             ],
             'reCaptcha' => [
-                'secretKey' => '12345678',
-                'siteKey' => '12345678',
+                'secretKey' => '6LcV5NwZAAAAALXpvTgqWEs1g-6unMvx63-r6k6V',
+                'siteKey' => '6LcV5NwZAAAAAFUTeVmZd6WHVszbmqZ7iWm-TMvS',
             ],
         ],
     ],
