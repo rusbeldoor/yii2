@@ -10,6 +10,10 @@ return [
             'subscriptions' => [ // Модуль Subscriptions
                 'salt' => '12345678', // Соль для хэша
             ],
+            'reCaptcha' => [
+                'secretKey' => '12345678',
+                'siteKey' => '12345678',
+            ],
         ],
     ],
 ];
