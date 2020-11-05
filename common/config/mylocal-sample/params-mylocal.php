@@ -14,6 +14,15 @@ return [
                 'siteKey' => '6LcV5NwZAAAAAFUTeVmZd6WHVszbmqZ7iWm-TMvS',
                 'secretKey' => '6LcV5NwZAAAAALXpvTgqWEs1g-6unMvx63-r6k6V',
             ],
+            'yandex' => [
+                'direct' => [
+                    'api' => [
+                        'url' => '',
+                        'token' => '',
+                        'login' => '',
+                    ],
+                ],
+            ],
         ],
     ],
 ];
