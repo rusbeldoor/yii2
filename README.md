@@ -1,5 +1,5 @@
 Данное развитие Yii2 Advance шаблона оптимизировано под быстрый старт нового проекта. В дальнейшем обновлять репозиторий не имеет смысла, т.к. предпологается, что Вы будите не только добалять новые, но и менять имеющиеся файлы, что может вызвать конфликты с уже внесенными изменениями.
-1
+
 # Установка и настройка
 
 1. Выгрузите репозиторий.
@@ -36,11 +36,9 @@ composer install
 composer update
 ```
 
-7. Выполнить миграции зависимостей для изменения структуры базы данных.
-```
-php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-general/console/migrations/
-php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-yandex-direct/console/migrations/
-```
+7. Выполните настройки зависимостей:
+- https://github.com/rusbeldoor/yii2-general
+- https://github.com/rusbeldoor/yii2-yandex-direct 
 
 8. ...
 ```
