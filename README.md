@@ -39,6 +39,7 @@ composer update
 7. Выполнить миграции для изменения структуры базы данных.
 ```
 php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-general/console/migrations/
+php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-yandex-direct/console/migrations/
 ```
 
 8. ...
