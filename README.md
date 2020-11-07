@@ -36,9 +36,10 @@ composer install
 composer update
 ```
 
-7. Выполнить миграции для изменения структуры базы данных. Внимание! Если таблицы auth_assignment, auth_item, auth_item_child, auth_rule, cron, cron_log, user_subscription, user_subscription_key, user_subscription_channel уже существуют, они будут удалены и созданы заного.
+7. Выполнить миграции зависимостей для изменения структуры базы данных.
 ```
 php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-general/console/migrations/
+php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-yandex-direct/console/migrations/
 ```
 
 8. ...
@@ -47,6 +48,7 @@ php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-general/console/migratio
 
 9. Не обязательно (если Вам нужно и Вы понимаете как делать по другому). Переименуйте папку yii2 в yii2.local. Установите при обращении к адресу http://yii2.local папку yii2.local/frontend/web. Установите при обращении к адресу http://panel.yii2.local папку yii2.local/backend/web. 
 
-# Ещё
+# Зависимости
 
-Смотри описание репозитория https://github.com/rusbeldoor/yii2-general.
+- https://github.com/rusbeldoor/yii2-general
+- https://github.com/rusbeldoor/yii2-yandex-direct
