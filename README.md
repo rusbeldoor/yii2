@@ -50,4 +50,6 @@ php yii migrate --migrationPath=@vendor/rusbeldoor/yii2-yandex-direct/console/mi
 
 # Ещё
 
-Смотри описание репозитория https://github.com/rusbeldoor/yii2-general.
+Смотри описание репозиториев:
+- https://github.com/rusbeldoor/yii2-general
+- https://github.com/rusbeldoor/yii2-yandex-direct
