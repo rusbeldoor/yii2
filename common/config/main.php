@@ -2,6 +2,7 @@
 $dbMain = require(__DIR__ . '/db_main-mylocal.php');
 return [
     'language' => 'ru-RU',
+    'timeZone' => 'Europe/Moscow',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
