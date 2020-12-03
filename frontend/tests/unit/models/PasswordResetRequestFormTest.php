@@ -2,7 +2,7 @@
 
 namespace frontend\tests\unit\models;
 
-use Yii;
+use yii;
 use frontend\models\PasswordResetRequestForm;
 use common\fixtures\UserFixture as UserFixture;
 use common\models\User;

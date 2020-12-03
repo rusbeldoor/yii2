@@ -2,7 +2,7 @@
 
 namespace backend\controllers;
 
-use Yii;
+use yii;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 

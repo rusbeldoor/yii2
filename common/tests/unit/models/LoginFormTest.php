@@ -2,7 +2,7 @@
 
 namespace common\tests\unit\models;
 
-use Yii;
+use yii;
 use common\models\LoginForm;
 use common\fixtures\UserFixture;
 

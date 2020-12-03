@@ -2,7 +2,7 @@
 
 namespace frontend\controllers;
 
-use Yii;
+use yii;
 use yii\base\InvalidArgumentException;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
