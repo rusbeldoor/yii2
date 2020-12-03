@@ -5,7 +5,7 @@ namespace console\controllers;
 /**
  * Крон удаления устарвеших данных
  */
-class RemoveOutdatedDataController extends \rusbeldoor\yii2General\console\controllers\RemoveOutdatedDataController
+class RemovingOutdatedDataController extends \rusbeldoor\yii2General\console\controllers\RemovingOutdatedDataController
 {
     /**
      * ...
