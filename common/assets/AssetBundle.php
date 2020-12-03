@@ -11,11 +11,11 @@ class AssetBundle extends \yii\web\AssetBundle
     public $sourcePath = '@common/web';
 
     public $css = [
-        'css/rusbeldoor-yii2-common.css',
+        'css/yii2-common.css',
     ];
 
     public $js = [
-        'js/rusbeldoor-yii2-common.js',
+        'js/yii2-common.js',
     ];
 
     public $depends = [

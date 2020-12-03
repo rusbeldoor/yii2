@@ -14,11 +14,11 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
 
     public $css = [
-        'css/rusbeldoor-yii2-frontend.css',
+        'css/yii2-frontend.css',
     ];
 
     public $js = [
-        'js/rusbeldoor-yii2-frontend.js',
+        'js/yii2-frontend.js',
     ];
 
     public $depends = [
