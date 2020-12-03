@@ -38,15 +38,10 @@ composer update
 
 7. Выполните настройки зависимостей:
 - https://github.com/rusbeldoor/yii2-general
-- https://github.com/rusbeldoor/yii2-yandex-direct 
+- https://github.com/rusbeldoor/yii2-yandex-direct (не обязательно)
 
 8. ...
 ```
 ```
 
 9. Не обязательно (если Вам нужно и Вы понимаете как делать по другому). Переименуйте папку yii2 в yii2.local. Установите при обращении к адресу http://yii2.local папку yii2.local/frontend/web. Установите при обращении к адресу http://panel.yii2.local папку yii2.local/backend/web. 
-
-# Зависимости
-
-- https://github.com/rusbeldoor/yii2-general
-- https://github.com/rusbeldoor/yii2-yandex-direct
