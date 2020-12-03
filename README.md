@@ -38,7 +38,7 @@ composer update
 
 7. Выполните настройки зависимостей:
 - https://github.com/rusbeldoor/yii2-general
-- https://github.com/rusbeldoor/yii2-yandex-direct 
+- https://github.com/rusbeldoor/yii2-yandex-direct (не обязательно)
 
 8. ...
 ```
