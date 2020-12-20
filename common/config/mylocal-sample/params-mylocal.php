@@ -15,12 +15,5 @@ return [
                 'secretKey' => '6LcV5NwZAAAAALXpvTgqWEs1g-6unMvx63-r6k6V',
             ],
         ],
-        'yii2YandexDirect' => [ // Репозиторий yii2YandexDirect
-            'api' => [ // АПИ Яндекс.Директ
-                'url' => '',
-                'token' => '',
-                'login' => '',
-            ],
-        ],
     ],
 ];
