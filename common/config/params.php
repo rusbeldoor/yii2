@@ -8,6 +8,9 @@ return [
 
     'rusbeldoor' => [ // Поставщик rusbeldoor
         'yii2General' => [ // Репозиторий yii2General
+            'platfrom' => [ // Модуль Platfrom
+                'onlyMigrations' => true, // Изменение только через миграции
+            ],
             'rbac' => [ // Модуль RBAC
                 'onlyMigrations' => true, // Изменения только через миграции
             ],
