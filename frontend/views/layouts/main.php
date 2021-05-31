@@ -29,19 +29,14 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?
-    $menu = new Menu();
+    <? $menu = new Menu();
     NavBar::begin([
         'brandLabel' => Yii::$app->params['projectName'],
         'brandUrl' => Yii::$app->homeUrl,
         'options' => ['class' => 'menu-navbar navbar-dark bg-dark navbar-expand-md'],
     ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menu->menu,
-    ]);
-    NavBar::end();
-    ?>
+    echo Nav::widget(['options' => ['class' => 'navbar-nav navbar-right'], 'items' => $menu->menu]);
+    NavBar::end(); ?>
 
     <div class="container">
         <?= NavX::widget(['options' => ['class'=>'menu-pills nav nav-pills'], 'items' => ((isset($this->params['navX'])) ? $this->params['navX'] : [])]); ?>
