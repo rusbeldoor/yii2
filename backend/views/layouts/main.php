@@ -7,10 +7,10 @@ use yii\helpers\Html;
 use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
 use yii\bootstrap4\Breadcrumbs;
-use common\widgets\Alert;
 use backend\assets\AppAsset;
 use backend\components\Menu;
 use kartik\nav\NavX;
+use rusbeldoor\yii2General\widgets\Alert;
 
 AppAsset::register($this);
 ?>
