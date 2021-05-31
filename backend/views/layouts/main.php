@@ -14,7 +14,7 @@ use kartik\nav\NavX;
 
 AppAsset::register($this);
 ?>
-<?php $this->beginPage() ?>
+<? $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
@@ -26,7 +26,7 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body>
-<?php $this->beginBody() ?>
+<? $this->beginBody() ?>
 
 <div class="wrap">
     <? $menu = new Menu();
@@ -52,7 +52,7 @@ AppAsset::register($this);
     </div>
 </footer>
 
-<?php $this->endBody() ?>
+<? $this->endBody() ?>
 </body>
 </html>
-<?php $this->endPage() ?>
+<? $this->endPage() ?>
