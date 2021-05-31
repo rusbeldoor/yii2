@@ -10,7 +10,6 @@ use yii\bootstrap4\Breadcrumbs;
 use common\widgets\Alert;
 use frontend\assets\AppAsset;
 use frontend\components\Menu;
-use kartik\nav\NavX;
 
 AppAsset::register($this);
 ?>
@@ -39,7 +38,6 @@ AppAsset::register($this);
     NavBar::end(); ?>
 
     <div class="container">
-        <?= NavX::widget(['options' => ['class'=>'menu-pills nav nav-pills'], 'items' => ((isset($this->params['navX'])) ? $this->params['navX'] : [])]); ?>
         <?= Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : []]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
