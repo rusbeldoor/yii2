@@ -4,9 +4,9 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap4\Nav;
-use yii\bootstrap4\NavBar;
-use yii\bootstrap4\Breadcrumbs;
+use yii\bootstrap5\Nav;
+use yii\bootstrap5\NavBar;
+use yii\bootstrap5\Breadcrumbs;
 use backend\assets\AppAsset;
 use backend\components\Menu;
 use rusbeldoor\yii2General\widgets\Alert;
