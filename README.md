@@ -33,7 +33,6 @@ cp -r console/config/mylocal-sample/* console/config
 6. Выполните установку или обновление зависимостей.
 ```
 composer install
-composer update
 ```
 
 7. Выполните настройки зависимостей:
