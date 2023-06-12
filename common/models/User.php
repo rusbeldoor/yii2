@@ -45,12 +45,10 @@ class User extends \rusbeldoor\yii2General\models\ActiveRecord implements Identi
      * {@inheritdoc}
      */
     public function rules()
-    {
-        return [
-            ['status', 'default', 'value' => self::STATUS_INACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
-        ];
-    }
+    { return [
+        ['status', 'default', 'value' => self::STATUS_INACTIVE],
+        ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
+    ]; }
 
     /**
      * {@inheritdoc}
@@ -95,7 +93,8 @@ class User extends \rusbeldoor\yii2General\models\ActiveRecord implements Identi
      * @param string $token verify email token
      * @return static|null
      */
-    public static function findByVerificationToken($token) {
+    public static function findByVerificationToken($token)
+    {
         return static::findOne([
             'verification_token' => $token,
             'status' => self::STATUS_INACTIVE

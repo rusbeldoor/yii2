@@ -20,13 +20,11 @@ class LoginForm extends Model
      * {@inheritdoc}
      */
     public function rules()
-    {
-        return [
-            [['email', 'password'], 'required'],
-            ['rememberMe', 'boolean'],
-            ['password', 'validatePassword'],
-        ];
-    }
+    { return [
+        [['email', 'password'], 'required'],
+        ['rememberMe', 'boolean'],
+        ['password', 'validatePassword'],
+    ]; }
 
     /**
      * Validates the password.
@@ -50,13 +48,12 @@ class LoginForm extends Model
      *
      * @return array
      */
-    public function attributeLabels() {
-        return [
-            'email' => 'Электронная почта',
-            'password' => 'Пароль',
-            'rememberMe' => 'Запоминть',
-        ];
-    }
+    public function attributeLabels()
+    { return [
+        'email' => 'Электронная почта',
+        'password' => 'Пароль',
+        'rememberMe' => 'Запоминть',
+    ]; }
 
     /**
      * Logs in a user using the provided email and password.

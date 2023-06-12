@@ -15,29 +15,26 @@ class PasswordResetRequestForm extends Model
      * {@inheritdoc}
      */
     public function rules()
-    {
-        return [
-            ['email', 'trim'],
-            ['email', 'required'],
-            ['email', 'email'],
-            ['email', 'exist',
-                'targetClass' => '\common\models\User',
-                'filter' => ['status' => User::STATUS_ACTIVE],
-                'message' => 'There is no user with this email address.'
-            ],
-        ];
-    }
+    { return [
+        ['email', 'trim'],
+        ['email', 'required'],
+        ['email', 'email'],
+        ['email', 'exist',
+            'targetClass' => '\common\models\User',
+            'filter' => ['status' => User::STATUS_ACTIVE],
+            'message' => 'There is no user with this email address.'
+        ],
+    ]; }
 
     /**
      * Названия полей
      *
      * @return array
      */
-    public function attributeLabels() {
-        return [
-            'email' => 'Электронная почта',
-        ];
-    }
+    public function attributeLabels()
+    { return [
+        'email' => 'Электронная почта',
+    ]; }
 
     /**
      * Sends an email with a link, for resetting the password.

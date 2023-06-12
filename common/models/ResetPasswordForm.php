@@ -41,12 +41,10 @@ class ResetPasswordForm extends Model
      * {@inheritdoc}
      */
     public function rules()
-    {
-        return [
-            ['password', 'required'],
-            ['password', 'string', 'min' => 6],
-        ];
-    }
+    { return [
+        ['password', 'required'],
+        ['password', 'string', 'min' => 6],
+    ]; }
 
     /**
      * Resets password.

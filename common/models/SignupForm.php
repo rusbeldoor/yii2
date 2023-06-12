@@ -16,30 +16,27 @@ class SignupForm extends Model
      * {@inheritdoc}
      */
     public function rules()
-    {
-        return [
-            ['email', 'trim'],
-            ['email', 'required'],
-            ['email', 'email'],
-            ['email', 'string', 'max' => 255],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
+    {  return [
+        ['email', 'trim'],
+        ['email', 'required'],
+        ['email', 'email'],
+        ['email', 'string', 'max' => 255],
+        ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
 
-            ['password', 'required'],
-            ['password', 'string', 'min' => 8],
-        ];
-    }
+        ['password', 'required'],
+        ['password', 'string', 'min' => 8],
+    ]; }
 
     /**
      * Названия полей
      *
      * @return array
      */
-    public function attributeLabels() {
-        return [
-            'email' => 'Электронная почта',
-            'password' => 'Пароль',
-        ];
-    }
+    public function attributeLabels()
+    { return [
+        'email' => 'Электронная почта',
+        'password' => 'Пароль',
+    ]; }
 
     /**
      * Signs user up.
