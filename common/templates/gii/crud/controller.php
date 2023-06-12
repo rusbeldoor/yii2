@@ -49,16 +49,14 @@ class <?= $controllerClass ?> extends <?= StringHelper::basename($generator->bas
      * {@inheritdoc}
      */
     public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
+    { return [
+        'verbs' => [
+            'class' => VerbFilter::className(),
+            'actions' => [
+                'delete' => ['POST'],
             ],
-        ];
-    }
+        ],
+    ]; }
 
     /**
      * Lists all <?= $modelClass ?> models.

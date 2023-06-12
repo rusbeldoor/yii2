@@ -15,14 +15,12 @@ class LoginCest
      * @return array
      */
     public function _fixtures()
-    {
-        return [
-            'user' => [
-                'class' => UserFixture::className(),
-                'dataFile' => codecept_data_dir() . 'login_data.php',
-            ],
-        ];
-    }
+    { return [
+        'user' => [
+            'class' => UserFixture::className(),
+            'dataFile' => codecept_data_dir() . 'login_data.php',
+        ],
+    ]; }
 
     public function _before(FunctionalTester $I)
     {
@@ -30,12 +28,10 @@ class LoginCest
     }
 
     protected function formParams($login, $password)
-    {
-        return [
-            'LoginForm[username]' => $login,
-            'LoginForm[password]' => $password,
-        ];
-    }
+    { return [
+        'LoginForm[username]' => $login,
+        'LoginForm[password]' => $password,
+    ]; }
 
     public function checkEmpty(FunctionalTester $I)
     {

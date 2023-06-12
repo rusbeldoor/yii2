@@ -18,15 +18,13 @@ class LoginCest
      * @return array
      */
     public function _fixtures()
-    {
-        return [
-            'user' => [
-                'class' => UserFixture::className(),
-                'dataFile' => codecept_data_dir() . 'login_data.php'
-            ]
-        ];
-    }
-    
+    { return [
+        'user' => [
+            'class' => UserFixture::className(),
+            'dataFile' => codecept_data_dir() . 'login_data.php'
+        ],
+    ]; }
+
     /**
      * @param FunctionalTester $I
      */

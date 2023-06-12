@@ -18,14 +18,12 @@ class ResendVerificationEmailCest
      * @return array
      */
     public function _fixtures()
-    {
-        return [
-            'user' => [
-                'class' => UserFixture::className(),
-                'dataFile' => codecept_data_dir() . 'user.php',
-            ],
-        ];
-    }
+    { return [
+        'user' => [
+            'class' => UserFixture::className(),
+            'dataFile' => codecept_data_dir() . 'user.php',
+        ],
+    ]; }
 
     public function _before(FunctionalTester $I)
     {
@@ -33,11 +31,9 @@ class ResendVerificationEmailCest
     }
 
     protected function formParams($email)
-    {
-        return [
-            'ResendVerificationEmailForm[email]' => $email
-        ];
-    }
+    { return [
+        'ResendVerificationEmailForm[email]' => $email
+    ]; }
 
     public function checkPage(FunctionalTester $I)
     {

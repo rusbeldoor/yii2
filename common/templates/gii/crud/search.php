@@ -38,11 +38,9 @@ class <?= $searchModelClass ?> extends <?= isset($modelAlias) ? $modelAlias : $m
      * {@inheritdoc}
      */
     public function rules()
-    {
-        return [
-            <?= implode(",\n            ", $rules) ?>,
-        ];
-    }
+    { return [
+        <?= implode(",\n            ", $rules) ?>,
+    ]; }
 
     /**
      * {@inheritdoc}
